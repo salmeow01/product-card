@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #faf9fc;
+  color: #444;
+}
+
+.catalog {
+  width: 1200px;
+  margin: 50px auto;
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.catalog::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 760px;
+  height: 520px;
+  background: url("img/background-flowers.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.12;
+  z-index: -1;
+}
+
+.catalog h1 {
+  margin-bottom: 60px;
+  color: #5b5b8c;
+  font-size: 60px;
+  color: #5b5b8c;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product {
+  width: 350px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.product img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background: #f4f4f4;
+}
+
+.skin {
+  margin-top: 20px;
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.product h2 {
+  margin: 12px 0;
+  color: #494970;
+  font-size: 24px;
+}
+
+.description {
+  color: #666;
+  line-height: 24px;
+}
+
+.ingredients {
+  margin-top: 20px;
+}
+
+.ingredients p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.ingredients ul {
+  margin-left: 20px;
+  line-height: 24px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.price strong {
+  color: #494970;
+  font-size: 18px;
+}
+
+.price span {
+  color: #494970;
+  font-size: 18px;
+  font-weight: bold;
+}
